@@ -6,7 +6,8 @@ using namespace std;
 int main() {
 	int amount{};
 	cout << "Enter the amount of elements you want in the vector: "; cin >> amount;
-	auto* vector_arr{ new vector<float>{} };
+	auto* vector_arr{ new vector<float>{} }; //or you can do   auto vector_v{ make_shared<vector<int>>()} (smart pointer)
+
 
 
 	for (int i{}; i < amount; i++) {
